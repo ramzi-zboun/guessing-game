@@ -1,11 +1,10 @@
 'use strict';
 
-
 alert('welcome in my page');
 
 let name = prompt('what is your name ?');
 console.log(name);
-alert(Hello + name);
+alert('Hello' + name);
 
 alert('we will play aguessing game about me lets go');
 
@@ -13,26 +12,35 @@ let go = prompt('my name is ramzi!');
 //console.log(go);
 switch (go.toLowerCase()) {
     case ' yes':
+          case "y":
         alert('corect rami is my name');
 
         break;
     case 'no':
+         case "n":
         alert('thats wrong my name is ramzi');
+        break;
+         default:
+        alert('please answer with yes or no to qustions');
         break;
 
 
 }
 
 let age = prompt('my age is 25!');
-//console.log(age);
+console.log(age);
 switch (age.toLowerCase()) {
     case ' yes':
-
+     case "y":
         alert('thats correct my age is 25');
 
         break;
     case 'no':
+          case "n":
         alert('no no I am 25');
+        break;
+         default:
+        alert('please answer with yes or no to qustions');
         break;
 }
 
@@ -40,13 +48,16 @@ let favouritHobby = prompt('my favourite HOBBY IS Drawing!');
 //console.log(favouritHobby );
 switch (favouritHobby.toLowerCase()) {
     case ' yes':
-
+    case "y":
         alert('yes it is');
 
         break;
     case 'no':
-
+  case "n":
         alert('you wrong');
+        break;
+         default:
+        alert('please answer with yes or no to qustions');
         break;
 }
 
@@ -54,14 +65,31 @@ let study = prompt('I studied communications engineering');
 //console.log(study);
 switch (study.toLowerCase()) {
     case ' yes':
+       case "y":
         alert('yes i have it ');
 
         break;
     case 'no':
+      case "n":
         alert('I already finished it ');
         break;
-
+         default:
+        alert('please answer with yes or no to qustions ');
+        break;
+        
+let num = prompt('please answer with yes or no to qustions ');
+while (nmber !== 10) {
+    alert("Its Wrong number ");
+    if (nmber < 10)
+        alert("Go with a Higher number ")
+    if (nmber <10 )
+        
+        alert("Go with a Lower number ")
+    num = prompt('nice try , try again ^');
 }
+if (num == 10)
+    alert('You're right, I was really born on this day ');
+
 /*let game = prompt('i am agamer ');
 //console.log(game);
 if (game.toLowerCase === 'yes' || game.toLowerCase === 'y') {
