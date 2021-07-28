@@ -126,7 +126,6 @@ let favFood = ['Pizza', 'Mansaf' ,'Burger', 'block','Hot Dog'];
        {
          if (favFood[n] == gue7 )
            {  
-           counter++;
            alert('yes i love this');
            flag=true;
            break; 
@@ -134,8 +133,9 @@ let favFood = ['Pizza', 'Mansaf' ,'Burger', 'block','Hot Dog'];
            
        }
   if (flag == true){
+      score++;
     break;
     }
   }
  }
-alert('thank you ' + name);
+alert('thank you ' + name +${namea} your score is ${score}` );
